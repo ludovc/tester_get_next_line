@@ -54,17 +54,33 @@ void	just_nl()
 	s = get_next_line(fd);
 	printf("%s", s);
 	free(s);
+	s = get_next_line(fd);
+	printf("%s", s);
+	free(s);
 	close(fd);
 }
 
 void	just_a()
 {
-	int fd = open("./just_a", O_RDONLY);
+	int fd = open("./41_no_nl", O_RDONLY);
 	char *s;
 
 	s = get_next_line(fd);
 	printf("%s", s);
 	free(s);
+	close(fd);
+}
+
+void	altro_caso()
+{
+	int fd = open("./t", O_RDONLY);
+	char *s;
+
+	while ((s = get_next_line(fd)))
+	{
+		printf("%s", s);
+		free(s);
+	}
 	close(fd);
 }
 
@@ -75,5 +91,6 @@ int	main()
 	//file_vuoto();
 	//no_nl();
 	//just_nl();
-	just_a();
+	//just_a();
+	altro_caso();
 }
