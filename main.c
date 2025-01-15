@@ -65,9 +65,6 @@ void	just_a()
 	s = get_next_line(fd);
 	printf("%s", s);
 	free(s);
-	s = get_next_line(fd);
-	printf("%s", s);
-	free(s);
 	close(fd);
 }
 
