@@ -1,6 +1,0 @@
-2: linea 1
-2: linea 2
-2: linea 3
-2: linea 4
-2: linea 5
-2: linea 6
