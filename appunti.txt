@@ -1,0 +1,5 @@
+usare da .. con un comando del tipo
+cc test/main.c get_next_line.c get_next_line_utils.c
+
+altro esempio
+cc test/main.c get_next_line.c get_next_line_utils.c -D BUFFER_SIZE=-1 -g
