@@ -10,9 +10,9 @@ int	main()
 	int		fd;
 	char	*res;
 
-	fd = open("empty", O_RDONLY);
+	fd = open("file", O_RDONLY);
 	res = get_next_line(fd);
-	printf("%s\n", res);
-	close(fd);
+	printf("%s", res);
 	free(res);
+	close(fd);
 }
